@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Каталог товаров</title>
+  <title>Главная — Учебный интернет-магазин</title>
+  <meta name="description" content="Главная страница учебного интернет-магазина.">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
@@ -29,6 +30,17 @@
 						Популярные товары
 						</a>
 					</li>
+					<li class="site-nav__item">
+					  <a class="site-nav__link" href="product.html">
+						Товар
+					  </a>
+					</li>
+
+					<li class="site-nav__item">
+					  <a class="site-nav__link" href="order.html">
+						Оформить заявку
+					  </a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -39,8 +51,6 @@
 			<h1>Учебный интернет-магазин</h1>
 			<p>
 			Это стартовая страница учебного frontend-проекта.
-			В дальнейшем на её основе будет разработан многостраничный сайт
-			интернет-магазина или каталога услуг.
 			</p>
 			<a class="button" href="#popular">Перейти к товарам</a>
 		</section>
@@ -171,7 +181,7 @@
 			<small>Формат: +7 (900) 000-00-00</small>
 		  </div>
 
-		  <div class="form-field">
+		  <div class="order-form__field">
 			<label class="order-form__label" for="order-comment">Комментарий</label>
 			<textarea
 				class="order-form__input"	
@@ -182,7 +192,7 @@
 			></textarea>
 		  </div>
 
-		  <div class="form-field">
+		  <div class="order-form__field">
 			<label class="order-form__label" for="order-date">Дата связи</label>
 			<input
 				class="order-form__input"	
@@ -191,6 +201,18 @@
 				type="date"
 			>
 		  </div>
+		  
+			<div class="order-form__field">
+				<label class="order-form__label">
+				<input
+				type="checkbox"
+				id="order-consent"
+				name="consent"
+				required
+				>
+				Согласен на обработку персональных данных
+				</label>
+			</div>
 
 		  <div class="order-form__actions">
 			<button class="button button--secondary" type="button" id="close-order-dialog">
